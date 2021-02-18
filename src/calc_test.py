@@ -6,10 +6,14 @@ class TestStringMethods(unittest.TestCase):
     def test_add_2arg(self):
         # Make sure 3 + 4 = 7
         self.assertEqual(add(3, 4), 7, 'adding three and four')
-   
+
     def test_sub_2arg(self):
         # Make sure 4 - 3 = 1
         self.assertEqual(sub(4, 3), 1, 'subtracting three from four')
+
+    def test_add_3args(self):
+        # make sure 6 - 3 - 1 = 2
+        self.assertEqual(sub(6, 3, 1), 2, 'subtracting three and one from six')
 
 if __name__ == '__main__':
     unittest.main()
